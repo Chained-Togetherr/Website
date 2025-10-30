@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chained Together - Produk</title>
+    <link rel="website icon" type="png" href="IMG/logo2.png">
+    <link rel="stylesheet" href="CSS/produk.css">
+    <link rel="stylesheet" href="CSS/scroll.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <header id="header">
+        <nav>
+            <a href="index.html " class="logo">Chained Together</a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h1>Chained Together</h1>
+            <p>Lihat Semua Produk Kami</p>
+            <a href="#products" class="cta-button">Lihat Koleksi</a>
+        </section>
+
+        <section id="products" class="products">
+            <h2 class="section-title">Produk</h2>
+            <div class="product-grid">
+                <div class="product-card" onclick="openModal('premium')">
+                    <div class="product-image">
+                        <img src="IMG/logo2.png">
+                    </div>
+                    <h3>Premium Classic</h3>
+                    <p></p>
+                    <div class="price">Rp 45.000</div>
+                    <button class="view-button">Lihat</button>
+                </div>
+                
+                <div class="product-card" onclick="openModal('luxury')">
+                    <div class="product-image">
+                        <img src="IMG/logo2.png">
+                    </div>
+                    <h3>Luxury Crystal</h3>
+                    <p></p>
+                    <div class="price">Rp 89.000</div>
+                    <button class="view-button">Lihat</button>
+                </div>
+                
+                <div class="product-card" onclick="openModal('custom')">
+                    <div class="product-image">
+                        <img src="IMG/logo2.png">
+                    </div>
+                    <h3>Custom Design</h3>
+                    <p></p>
+                    <div class="price">Rp 125.000</div>
+                    <button class="view-button">Lihat</button>
+                </div>
+
+                <div class="product-card" onclick="openModal('adamantium')">
+                    <div class="product-image">
+                        <img src="IMG/logo2.png">
+                    </div>
+                    <h3>Adamantium</h3>
+                    <p></p>
+                    <div class="price">Rp 200.000</div>
+                    <button class="view-button">Lihat</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Chained Together. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Modal untuk detail produk -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="JS/produk.js">
+    </script>
+</body>
+</html>
